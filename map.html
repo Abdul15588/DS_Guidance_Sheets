@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f09f67f564fa4ce3a028dadcdc036092 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f09f67f564fa4ce3a028dadcdc036092" ></div>
+        
+</body>
+<script>    
+    
+            var map_f09f67f564fa4ce3a028dadcdc036092 = L.map(
+                "map_f09f67f564fa4ce3a028dadcdc036092",
+                {
+                    center: [31.450365, 73.134964],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fb603f5f03f4b97b565688c6a70ecfb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f09f67f564fa4ce3a028dadcdc036092);
+        
+    
+            var marker_d8085bd8b4ff40fb949f2bf118dada34 = L.marker(
+                [31.56192, 74.348083],
+                {}
+            ).addTo(map_f09f67f564fa4ce3a028dadcdc036092);
+        
+    
+            var icon_9e2ebac0e8ce441d8f592691625fd1cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d8085bd8b4ff40fb949f2bf118dada34.setIcon(icon_9e2ebac0e8ce441d8f592691625fd1cf);
+        
+    
+        var popup_cd2e0470ab854de3a5ff25775421d05c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_795466aa67264d9bace9753cdd8a6084 = $(`<div id="html_795466aa67264d9bace9753cdd8a6084" style="width: 100.0%; height: 100.0%;">Rainy</div>`)[0];
+            popup_cd2e0470ab854de3a5ff25775421d05c.setContent(html_795466aa67264d9bace9753cdd8a6084);
+        
+
+        marker_d8085bd8b4ff40fb949f2bf118dada34.bindPopup(popup_cd2e0470ab854de3a5ff25775421d05c)
+        ;
+
+        
+    
+    
+            marker_d8085bd8b4ff40fb949f2bf118dada34.bindTooltip(
+                `<div>
+                     First Target
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d88dd740b0d49f5acdfced550c18f9c = L.marker(
+                [31.450365, 73.134964],
+                {}
+            ).addTo(map_f09f67f564fa4ce3a028dadcdc036092);
+        
+    
+            var icon_53588eb82b9b47baafc4b1e936263470 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d88dd740b0d49f5acdfced550c18f9c.setIcon(icon_53588eb82b9b47baafc4b1e936263470);
+        
+    
+        var popup_ba3f2f587c134e81bdb850d6dba95443 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44e12bf42d6d4e8f966fb438c8adb7a1 = $(`<div id="html_44e12bf42d6d4e8f966fb438c8adb7a1" style="width: 100.0%; height: 100.0%;">Need attention</div>`)[0];
+            popup_ba3f2f587c134e81bdb850d6dba95443.setContent(html_44e12bf42d6d4e8f966fb438c8adb7a1);
+        
+
+        marker_8d88dd740b0d49f5acdfced550c18f9c.bindPopup(popup_ba3f2f587c134e81bdb850d6dba95443)
+        ;
+
+        
+    
+    
+            marker_8d88dd740b0d49f5acdfced550c18f9c.bindTooltip(
+                `<div>
+                     Second Target
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_111e17f5f0d742ee9910852a0ec4d582 = L.circleMarker(
+                [33.720001, 73.059998],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_f09f67f564fa4ce3a028dadcdc036092);
+        
+</script>
